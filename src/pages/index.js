@@ -39,7 +39,7 @@ export default function Home() {
               <div className="col col--12">
                 <div className="text--center">
                   <img 
-                    src="/img/edu-bad-plat.png" 
+                    src="img/edu-bad-plat.png" 
                     alt="IoT Educational and Research Platform" 
                     style={{
                       maxWidth: '70%',
