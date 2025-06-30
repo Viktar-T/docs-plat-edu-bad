@@ -42,7 +42,7 @@ The project is structured into four distinct phases, each building upon the prev
 To begin exploring this project:
 
 1. Review the [overall architecture](./architecture.md)
-2. Explore each phase documentation in the `phases/` directory
+2. Explore each phase documentation in the [phases](./phases/) directory
 3. Check the [integration guide](./integration.md) for cross-phase dependencies
 
 ## Navigation

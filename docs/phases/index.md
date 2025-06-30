@@ -6,17 +6,17 @@ This section contains documentation for all four phases of the Educational Platf
 
 The project is structured into four main phases, each building upon the previous to create a comprehensive educational platform:
 
-### [Phase 1: Hardware](./hardware/)
+### [Phase 1: Hardware](./01-hardware/)
 The foundation phase focuses on IoT devices and sensor networks for data collection. 
 
-### [Phase 2: Cloud Infrastructure](./cloud/)
+### [Phase 2: Cloud Infrastructure](./02-cloud/)
 The backend phase implements scalable cloud services for data processing and storage.
 
-### [Phase 3: Web Application](./web/)
+### [Phase 3: Web Application](./03-web/)
 The frontend phase creates an intuitive web interface for user interaction:
 - **Technology Stack**: React.
 
-### [Phase 4: Visualization & Analytics](./visualization/)
+### [Phase 4: Visualization & Analytics](./04-visualization/)
 The analytics phase provides advanced data analysis and visualization capabilities.
 
 
