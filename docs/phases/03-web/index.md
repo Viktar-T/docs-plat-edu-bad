@@ -1,4 +1,4 @@
-# Web Development Phase
+# Phase 3: Web Development Phase
 
 Welcome to the Web Development phase of the Educational Platform for Bad Data Science. This phase focuses on creating an intuitive, responsive, and educational web interface that allows users to interact with IoT sensor data, understand data quality issues, and learn data science concepts through hands-on experience.
 
