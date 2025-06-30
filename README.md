@@ -1,17 +1,21 @@
-# Website
+# IoT Platforma Edu-Badawcza Documentation
 
 This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+
+## 🚀 Live Site
+
+Visit the documentation at: https://viktar-t.github.io/docs-plat-edu-bad/
 
 ## Installation
 
 ```bash
-yarn
+npm install
 ```
 
 ## Local Development
 
 ```bash
-yarn start
+npm start
 ```
 
 This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
@@ -19,23 +23,44 @@ This command starts a local development server and opens up a browser window. Mo
 ## Build
 
 ```bash
-yarn build
+npm run build
 ```
 
 This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
 ## Deployment
 
-Using SSH:
+### Automatic Deployment (Recommended)
+
+This project is set up with GitHub Actions for automatic deployment. Every push to the `main` branch will automatically:
+1. Build the documentation
+2. Deploy to GitHub Pages
+
+### Manual Deployment
+
+If you need to deploy manually:
 
 ```bash
-USE_SSH=true yarn deploy
+npm run deploy-gh-pages
 ```
 
-Not using SSH:
+Or using the built-in Docusaurus command:
 
 ```bash
-GIT_USER=<Your GitHub username> yarn deploy
+GIT_USER=Viktar-T npm run deploy
 ```
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+### GitHub Pages Setup
+
+1. Go to your repository settings on GitHub
+2. Navigate to "Pages" in the left sidebar
+3. Under "Source", select "GitHub Actions"
+4. The site will be available at: https://viktar-t.github.io/docs-plat-edu-bad/
+
+## Project Structure
+
+- `/docs` - Documentation content in Markdown
+- `/src` - React components and pages
+- `/static` - Static assets (images, etc.)
+- `docusaurus.config.js` - Docusaurus configuration
+- `sidebars.js` - Documentation sidebar configuration

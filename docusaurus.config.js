@@ -13,6 +13,8 @@ const config = {
 
   organizationName: 'Viktar-T',
   projectName: 'docs-plat-edu-bad',
+  deploymentBranch: 'gh-pages',
+  trailingSlash: false,
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
