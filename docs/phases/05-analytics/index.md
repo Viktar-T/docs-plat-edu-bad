@@ -1,4 +1,4 @@
-# Phase 5: Advanced Analytics
+# Phase 5: Analytics
 
 ## Overview
 
