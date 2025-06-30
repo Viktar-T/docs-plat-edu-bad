@@ -44,7 +44,6 @@ To begin exploring this project:
 1. Review the [overall architecture](./architecture.md)
 2. Explore each phase documentation in the `phases/` directory
 3. Check the [integration guide](./integration.md) for cross-phase dependencies
-4. Refer to the [glossary](./glossary.md) for technical terms
 
 ## Navigation
 
@@ -52,6 +51,5 @@ To begin exploring this project:
 - **[Phases](./phases/)** - Detailed phase-by-phase documentation
 - **[Integration](./integration.md)** - Cross-phase integration points
 - **[Testing](./testing-validation.md)** - Testing strategies and validation
-- **[Glossary](./glossary.md)** - Terms and definitions
 - **[References](./references.md)** - Scientific papers and standards
 - **[Contributors](./contributors.md)** - Team and responsibilities
