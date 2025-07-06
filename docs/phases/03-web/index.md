@@ -10,6 +10,8 @@ A modern React application has been developed to provide an intuitive interface 
 
 **GitHub Repository**: [plat-edu-bad-front](https://github.com/Viktar-T/plat-edu-bad-front)
 
+**Live Demo**: [Deployed Frontend App](https://viktar-t.github.io/plat-edu-bad-front/)
+
 #### Key Features
 - **Interactive Department Map**: Visual representation of laboratory equipment with real-time data dashboards
 - **Real-time Data Visualization**: Live monitoring using Recharts for data visualization

@@ -28,6 +28,8 @@ A modern React-based web application has been developed to provide an intuitive 
 
 **GitHub Repository**: [plat-edu-bad-front](https://github.com/Viktar-T/plat-edu-bad-front)
 
+**Live Demo**: [Deployed Frontend App](https://viktar-t.github.io/plat-edu-bad-front/)
+
 ## Documentation Structure
 
 ### 📋 [Project Setup](./project-setup/index.md)
@@ -73,6 +75,7 @@ External resources, documentation links, and further reading materials.
 3. **Follow phases sequentially** from Hardware Integration to Analytics
 4. **Use** [Simulation Guide](./simulation/index.md) if you don't have physical hardware
 5. **Explore the** [Web Application](https://github.com/Viktar-T/plat-edu-bad-front) for the user interface
+6. **Try the live demo**: [https://viktar-t.github.io/plat-edu-bad-front/](https://viktar-t.github.io/plat-edu-bad-front/)
 
 ## Support
 
