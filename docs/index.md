@@ -2,7 +2,8 @@
 
 ## Project Overview
 
-This project provides a comprehensive framework for building real-time monitoring platforms for renewable energy systems and energy storage. The platform is designed for educational and research purposes, enabling students, educators, and researchers to monitor, analyze, and visualize energy data from various sources.
+This project provides a comprehensive framework for building real-time monitoring platforms for renewable energy systems and energy storage. The platform is designed for educational and research purposes, enabling students, educators, and researchers to monitor, analyze, and visualize energy data from various sources. 
+the project consists of four technological phases — Hardware Integration and Data Acquisition, Cloud Infrastructure and Data Handling, Web Platform Development, and Visualization and Analytics.
 
 ### Target Audience
 - **Educators**: Teaching renewable energy concepts and IoT monitoring
