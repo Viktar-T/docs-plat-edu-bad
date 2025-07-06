@@ -1,55 +1,80 @@
-# Project Overview
+# Real-Time Monitoring Educational and Research Platforms for Integrated Renewable Energy Sources and Energy Storage Systems
 
-Welcome to the Educational Platform for Bad Data Science project documentation. This comprehensive platform is designed to demonstrate common pitfalls and best practices in data science through a multi-phase implementation approach.
+## Project Overview
 
-## Project Vision
+This project provides a comprehensive framework for building real-time monitoring platforms for renewable energy systems and energy storage. The platform is designed for educational and research purposes, enabling students, educators, and researchers to monitor, analyze, and visualize energy data from various sources.
 
-This project serves as an educational tool that showcases real-world data science challenges and solutions, emphasizing the importance of proper data handling, analysis, and visualization techniques.
+### Target Audience
+- **Educators**: Teaching renewable energy concepts and IoT monitoring
+- **Researchers**: Conducting energy system analysis and optimization studies
+- **Students**: Learning practical IoT and energy monitoring skills
 
-## Project Phases
+### Key Features
+- Real-time data acquisition from renewable energy sources
+- Cloud-based data storage and processing
+- Advanced visualization and analytics capabilities
+- Scalable architecture supporting multiple devices
+- Educational simulation capabilities for hardware-free learning
 
-The project is structured into four distinct phases, each building upon the previous one:
+## Web Application
 
-### Phase 1: Hardware & Data Acquisition
-- Sensor integration and hardware setup
-- Data collection systems
-- IoT device management
-- Real-time data streaming
+A modern React-based web application has been developed to provide an intuitive interface for the energy monitoring platform. The application features:
 
-### Phase 2: Cloud Infrastructure
-- Scalable cloud architecture
-- Data pipelines and processing
-- Database management
-- Security implementation
+- **Interactive Department Map**: Visual representation of laboratory equipment with real-time data dashboards
+- **Real-time Data Visualization**: Live monitoring of energy systems using Recharts
+- **Responsive Design**: Modern UI built with React 18, TypeScript, and Tailwind CSS
+- **Educational Interface**: User-friendly navigation for students and researchers
 
-### Phase 3: Web Application
-- User interface development
-- API integration
-- Frontend/backend architecture
-- User experience design
+**GitHub Repository**: [plat-edu-bad-front](https://github.com/Viktar-T/plat-edu-bad-front)
 
-### Phase 4: Visualization & Analytics
-- Interactive dashboards
-- Advanced analytics
-- Data visualization tools
-- User guides and documentation
+## Documentation Structure
 
-### Phase 5: Analytics
-- 
+### 📋 [Project Setup](./project-setup/index.md)
+Complete project initialization, prerequisites, and environment setup.
 
-## Getting Started
+### 🏗️ [System Architecture](./architecture/index.md)
+Detailed system design, component interactions, and data flow diagrams.
 
-To begin exploring this project:
+### 🔧 [Technology Stack](./technology-stack/index.md)
+Comprehensive overview of all technologies used and their purposes.
 
-1. Review the [overall architecture](./architecture.md)
-2. Explore each phase documentation in the [phases](./phases/) directory
-3. Check the [integration guide](./integration.md) for cross-phase dependencies
+### 📊 [Phase 1: Hardware Integration](./phases/01-hardware/index.md)
+Hardware setup, sensor integration, and MQTT communication configuration.
 
-## Navigation
+### ☁️ [Phase 2: Cloud Infrastructure](./phases/02-cloud/index.md)
+Cloud platform setup including Node-RED, InfluxDB, and ThingsBoard.
 
-- **[Architecture](./architecture.md)** - System overview and design principles
-- **[Phases](./phases/)** - Detailed phase-by-phase documentation
-- **[Integration](./integration.md)** - Cross-phase integration points
-- **[Testing](./testing-validation.md)** - Testing strategies and validation
-- **[References](./references.md)** - Scientific papers and standards
-- **[Contributors](./contributors.md)** - Team and responsibilities
+### 🌐 [Phase 3: Web Platform](./phases/03-web/index.md)
+Web application development, Grafana dashboards, and user management.
+
+### 📈 [Phase 4: Visualization](./phases/04-visualization/index.md)
+Real-time visualization, historical data analysis, and reporting.
+
+### 📊 [Phase 5: Analytics](./phases/05-analytics/index.md)
+Advanced analytics, machine learning, and predictive modeling.
+
+### 🎮 [Simulation Guide](./simulation/index.md)
+Complete guide for simulating devices and data without physical hardware.
+
+### 🛠️ [Development Tools](./development/index.md)
+Development environment setup, debugging tools, and best practices.
+
+### 🔍 [Troubleshooting](./troubleshooting/index.md)
+Common issues, error solutions, and debugging guides.
+
+### 📚 [References](./references/index.md)
+External resources, documentation links, and further reading materials.
+
+## Quick Start
+
+1. **Begin with** [Project Setup](./project-setup/index.md) to prepare your environment
+2. **Review** [System Architecture](./architecture/index.md) to understand the overall design
+3. **Follow phases sequentially** from Hardware Integration to Analytics
+4. **Use** [Simulation Guide](./simulation/index.md) if you don't have physical hardware
+5. **Explore the** [Web Application](https://github.com/Viktar-T/plat-edu-bad-front) for the user interface
+
+## Support
+
+For questions and issues, refer to the [Troubleshooting](./troubleshooting/index.md) section or check the [References](./references/index.md) for additional resources.
+
+
