@@ -32,6 +32,8 @@ src/
 2. **Department Map**: Interactive map showing laboratory equipment with real-time data
 3. **Element Details**: Individual pages for each piece of equipment with detailed analytics
 
+<!-- Grey text section start -->
+<div class="text-grey">
 ## Grafana Installation & Configuration
 
 ### Docker Installation
@@ -687,3 +689,4 @@ module.exports = apiLimiter;
 3. **Check** [Troubleshooting](../../troubleshooting/index.md) for common issues
 4. **Use** [References](../../references/index.md) for additional resources
 
+</div>

@@ -3,6 +3,8 @@
 ## Overview
 Comprehensive troubleshooting guide for common issues encountered during setup, development, and operation of the renewable energy monitoring platform.
 
+<!-- Grey text section start -->
+<div class="text-grey">
 ## Quick Diagnosis
 
 ### System Health Check
@@ -842,3 +844,4 @@ docker ps -a
 2. **Check** [Development Tools](../development/index.md) for debugging techniques
 3. **Use** [Simulation Guide](../simulation/index.md) for testing without hardware
 4. **Refer to** [References](../references/index.md) for additional resources 
+</div>

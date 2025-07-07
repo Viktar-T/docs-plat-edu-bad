@@ -31,6 +31,8 @@ Complete hardware setup for renewable energy monitoring, including sensor integr
                     └─────────────────┘
 ```
 
+<!-- Grey text section start -->
+<div class="text-grey">
 ## Device Communication Setup
 
 ### ESP32 Configuration
@@ -400,4 +402,5 @@ void testCurrentSensor() {
 1. **Proceed to** [Phase 2: Cloud Infrastructure](../02-cloud/index.md) for backend setup
 2. **Review** [Simulation Guide](../../simulation/index.md) for hardware-free testing
 3. **Check** [Troubleshooting](../../troubleshooting/index.md) for common issues
+</div>
 

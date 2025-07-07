@@ -67,6 +67,8 @@ Sensors → Microcontroller → MQTT → Node-RED → InfluxDB → Grafana/Thing
 5. **Data Visualization**: Grafana and ThingsBoard display data
 6. **Data Analytics**: Advanced analysis and reporting
 
+<!-- Grey text section start -->
+<div class="text-grey">
 ## Topic Structure
 
 ### MQTT Topic Hierarchy
@@ -166,3 +168,5 @@ energy-monitor/
 1. **Review** [Technology Stack](../technology-stack/index.md) for detailed technology information
 2. **Proceed to** [Phase 1: Hardware Integration](../phases/01-hardware/index.md) for implementation
 3. **Check** [Project Setup](../project-setup/index.md) for environment preparation 
+</div>
+<!-- Grey text section end --> 

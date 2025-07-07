@@ -18,6 +18,8 @@ Complete guide for setting up the development environment and preparing all nece
 - **Git**: For version control
 - **VS Code**: Recommended IDE with extensions
 
+<!-- Grey text section start -->
+<div class="text-grey">
 ## Installation Steps
 
 ### 1. Docker Setup
@@ -138,3 +140,5 @@ git --version
 - **Docker issues**: Ensure virtualization is enabled in BIOS
 - **Port conflicts**: Check if ports 1883, 1880, 8086, 3000 are available
 - **Permission errors**: Run commands with appropriate privileges 
+
+</div>

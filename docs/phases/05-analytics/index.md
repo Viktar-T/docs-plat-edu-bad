@@ -3,6 +3,8 @@
 ## Overview
 Advanced analytics and machine learning capabilities for renewable energy monitoring, including predictive modeling, performance optimization, and intelligent insights.
 
+<!-- Grey text section start -->
+<div class="text-grey">
 ## Advanced Analytics Framework
 
 ### Data Pipeline Architecture
@@ -1047,3 +1049,5 @@ class InsightGenerator:
 2. **Check** [Troubleshooting](../../troubleshooting/index.md) for common issues
 3. **Use** [References](../../references/index.md) for additional resources
 4. **Explore** [Simulation Guide](../../simulation/index.md) for testing without hardware
+
+</div>

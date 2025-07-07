@@ -3,6 +3,8 @@
 ## Overview
 Advanced visualization and analytics capabilities for real-time monitoring, historical data analysis, and comprehensive reporting of renewable energy systems.
 
+<!-- Grey text section start -->
+<div class="text-grey">
 ## Real-Time Visualization
 
 ### Live Dashboard Components
@@ -1093,4 +1095,4 @@ alert_system.process_alerts(alerts, data)
 2. **Review** [Development Tools](../../development/index.md) for debugging techniques
 3. **Check** [Troubleshooting](../../troubleshooting/index.md) for common issues
 4. **Use** [References](../../references/index.md) for additional resources
-
+</div>

@@ -18,6 +18,8 @@ Complete guide for simulating renewable energy devices and data without physical
 - **Proof of Concept**: Demonstrate system capabilities
 - **Training**: Prepare for real hardware deployment
 
+<!-- Grey text section start -->
+<div class="text-grey">
 ## Simulation Methods
 
 ### 1. Python MQTT Simulator
@@ -599,3 +601,4 @@ class HybridSimulator:
 2. **Review** [Phase 1: Hardware Integration](../phases/01-hardware/index.md) for hardware concepts
 3. **Proceed to** [Phase 2: Cloud Infrastructure](../phases/02-cloud/index.md) for backend setup
 4. **Check** [Troubleshooting](../troubleshooting/index.md) for common issues 
+</div>

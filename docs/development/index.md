@@ -3,6 +3,8 @@
 ## Overview
 Comprehensive guide for development environment setup, debugging tools, testing frameworks, and best practices for the renewable energy monitoring platform.
 
+<!-- Grey text section start -->
+<div class="text-grey">
 ## Development Environment Setup
 
 ### IDE Configuration
@@ -828,3 +830,4 @@ mqtt_broker = config.get("mqtt.broker", "localhost")
 2. **Check** [Troubleshooting](../troubleshooting/index.md) for common issues
 3. **Proceed to** [Phase 1: Hardware Integration](../phases/01-hardware/index.md) for implementation
 4. **Use** [Simulation Guide](../simulation/index.md) for testing without hardware 
+</div>

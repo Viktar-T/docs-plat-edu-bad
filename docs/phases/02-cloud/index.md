@@ -3,6 +3,8 @@
 ## Overview
 Complete cloud infrastructure setup for processing, storing, and managing renewable energy data using Node-RED, InfluxDB, and ThingsBoard Community Edition.
 
+<!-- Grey text section start -->
+<div class="text-grey">
 ## Node-RED Installation & Configuration
 
 ### Docker Installation
@@ -485,4 +487,5 @@ docker stats
 1. **Proceed to** [Phase 3: Web Platform](../03-web/index.md) for visualization setup
 2. **Review** [Development Tools](../../development/index.md) for debugging
 3. **Check** [Troubleshooting](../../troubleshooting/index.md) for common issues
+</div>
 
