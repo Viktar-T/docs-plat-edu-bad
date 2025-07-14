@@ -41,6 +41,8 @@ const config = {
     ],
   ],
 
+  themes: ['@docusaurus/theme-mermaid'],
+
   themeConfig: {
       image: 'img/edu-bad-plat.png',
       navbar: {
