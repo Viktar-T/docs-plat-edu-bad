@@ -2,15 +2,17 @@
 
 ## Project Overview
 
-This project provides a comprehensive framework for building real-time monitoring platforms for renewable energy systems and energy storage. The platform is designed for educational and research purposes, enabling students, educators, and researchers to monitor, analyze, and visualize energy data from various sources. 
+This project provides a comprehensive framework for building real-time monitoring platforms for renewable energy systems and energy storage. The platform is designed for educational and research purposes, enabling students, educators, and researchers to monitor, analyze, and visualize energy data from various sources.
 the project consists of four technological phases — Hardware Integration and Data Acquisition, Cloud Infrastructure and Data Handling, Web Platform Development, and Visualization and Analytics.
 
 ### Target Audience
+
 - **Educators**: Teaching renewable energy concepts and IoT monitoring
 - **Researchers**: Conducting energy system analysis and optimization studies
 - **Students**: Learning practical IoT and energy monitoring skills
 
 ### Key Features
+
 - Real-time data acquisition from renewable energy sources
 - Cloud-based data storage and processing
 - Advanced visualization and analytics capabilities
@@ -33,52 +35,37 @@ A modern React-based web application has been developed to provide an intuitive 
 ## Documentation Structure
 
 ### 📋 [Project Setup](./project-setup/index.md)
+
 Complete project initialization, prerequisites, and environment setup.
 
 ### 🏗️ [System Architecture](./architecture/index.md)
+
 Detailed system design, component interactions, and data flow diagrams.
 
 ### 🔧 [Technology Stack](./technology-stack/index.md)
+
 Comprehensive overview of all technologies used and their purposes.
 
 ### 📊 [Phase 1: Hardware Integration](./phases/01-hardware/index.md)
+
 Hardware setup, sensor integration, and MQTT communication configuration.
 
 ### ☁️ [Phase 2: Cloud Infrastructure](./phases/02-cloud/index.md)
+
 Cloud platform setup including Node-RED, InfluxDB, and ThingsBoard.
 
 ### 🌐 [Phase 3: Web Platform](./phases/03-web/index.md)
+
 Web application development, Grafana dashboards, and user management.
 
 ### 📈 [Phase 4: Visualization](./phases/04-visualization/index.md)
+
 Real-time visualization, historical data analysis, and reporting.
 
 ### 📊 [Phase 5: Analytics](./phases/05-analytics/index.md)
+
 Advanced analytics, machine learning, and predictive modeling.
 
-### 🎮 [Simulation Guide](./simulation/index.md)
-Complete guide for simulating devices and data without physical hardware.
-
-### 🛠️ [Development Tools](./development/index.md)
-Development environment setup, debugging tools, and best practices.
-
-### 🔍 [Troubleshooting](./troubleshooting/index.md)
-Common issues, error solutions, and debugging guides.
-
 ### 📚 [References](./references/index.md)
+
 External resources, documentation links, and further reading materials.
-
-## Quick Start
-
-1. **Begin with** [Project Setup](./project-setup/index.md) to prepare your environment
-2. **Review** [System Architecture](./architecture/index.md) to understand the overall design
-3. **Follow phases sequentially** from Hardware Integration to Analytics
-4. **Use** [Simulation Guide](./simulation/index.md) if you don't have physical hardware
-5. **Explore the** [Web Application](https://github.com/Viktar-T/plat-edu-bad-front) for the user interface
-6. **Try the live demo**: [https://viktar-t.github.io/plat-edu-bad-front/](https://viktar-t.github.io/plat-edu-bad-front/)
-
-## Support
-
-For questions and issues, refer to the [Troubleshooting](./troubleshooting/index.md) section or check the [References](./references/index.md) for additional resources.
-
-
