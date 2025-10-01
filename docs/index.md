@@ -34,17 +34,9 @@ A modern React-based web application has been developed to provide an intuitive 
 
 ## Documentation Structure
 
-### 📋 [Project Setup](./project-setup/index.md)
-
-Complete project initialization, prerequisites, and environment setup.
-
 ### 🏗️ [System Architecture](./architecture/index.md)
 
 Detailed system design, component interactions, and data flow diagrams.
-
-### 🔧 [Technology Stack](./technology-stack/index.md)
-
-Comprehensive overview of all technologies used and their purposes.
 
 ### 📊 [Phase 1: Hardware Integration](./phases/01-hardware/index.md)
 
