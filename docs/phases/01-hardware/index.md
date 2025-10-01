@@ -36,5 +36,3 @@ Complete hardware setup for renewable energy monitoring, including sensor integr
 
 <!-- Grey text section start -->
 
-
-</div>

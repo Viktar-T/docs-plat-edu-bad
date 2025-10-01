@@ -29,5 +29,3 @@ A modern React application has been developed to provide an intuitive interface 
 
 <!-- Grey text section start -->
 
-
-</div>
