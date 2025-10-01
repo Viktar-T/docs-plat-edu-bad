@@ -12,31 +12,38 @@ This project is a collaboration between the following organizations:
 ## Contributors
 
 ### dr. inż Viktar Taustyka
+
 - **Role:** Head of the Project
 - **Organization:** Katedra Inżynierii Odnawialnych Źródeł Energii, ZUT
 - **Contact:** [viktar.taustyka@zut.edu.pl](mailto:viktar.taustyka@zut.edu.pl)
 - **Short Bio:**
 
 ### Adam Federowicz
+
 - **Role:** FrontEnd Developer
 - **Organization:** Technikum Łączności i Multimediów Cyfrowych w Szczecinie
 - **Contact:**
 - **Short Bio:**
 
 ### Filip Galor
+
 - **Role:** FrontEnd Developer
 - **Organization:** Technikum Łączności i Multimediów Cyfrowych w Szczecinie
 - **Contact:**
 - **Short Bio:**
 
-### Kacper Kanigowski
-- **Role:** Data Transmission Specialist
+### Stanisław Gorgolik
+
+- **Role:** Physical Network
 - **Organization:** Technikum Łączności i Multimediów Cyfrowych w Szczecinie
 - **Contact:**
 - **Short Bio:**
 
-### Stanisław Gorgolik
-- **Role:** Physical Network & Business Organization
-- **Organization:** Technikum Łączności i Multimediów Cyfrowych w Szczecinie
+### Anja Burgschwaiger
+
+- **Role:** Physical Network
+- **Organization: Montanuniversität Leoben**
 - **Contact:**
+- Field of Study: Data Science
+- Skills: Web Services | Renewable Energies | Python | Data Science | Artificial Intelligence
 - **Short Bio:**

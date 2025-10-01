@@ -6,13 +6,13 @@ This MVP architecture demonstrates a local, containerized IoT data pipeline for 
 
 ## Main Components
 
-| Component   | Description                                      | Technology      |
-|-------------|--------------------------------------------------|-----------------|
-| Node-RED    | Simulates and processes sensor data. Publishes to and subscribes from MQTT. Writes to InfluxDB. | Node-RED        |
-| MQTT Broker | Message broker for sensor data. Receives and distributes MQTT messages. | Eclipse Mosquitto (or similar) |
-| InfluxDB    | Time-series database for storing sensor data.    | InfluxDB        |
-| Grafana     | Visualization and dashboarding. Queries InfluxDB for real-time and historical data. | Grafana         |
-| Docker      | Containerization and orchestration of all services. | Docker, docker-compose |
+| Component   | Description                                                                                     | Technology                     |
+| ----------- | ----------------------------------------------------------------------------------------------- | ------------------------------ |
+| Node-RED    | Simulates and processes sensor data. Publishes to and subscribes from MQTT. Writes to InfluxDB. | Node-RED                       |
+| MQTT Broker | Message broker for sensor data. Receives and distributes MQTT messages.                         | Eclipse Mosquitto (or similar) |
+| InfluxDB    | Time-series database for storing sensor data.                                                   | InfluxDB                       |
+| Grafana     | Visualization and dashboarding. Queries InfluxDB for real-time and historical data.             | Grafana                        |
+| Docker      | Containerization and orchestration of all services.                                             | Docker, docker-compose         |
 
 ## Data Flow and Interactions
 
@@ -47,4 +47,3 @@ graph LR
 ---
 
 This architecture enables rapid prototyping, testing, and demonstration of IoT data flows and dashboards without requiring real hardware.
- 

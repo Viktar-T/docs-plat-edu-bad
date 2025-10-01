@@ -1,172 +1,70 @@
-# System Architecture
+**Professional IoT monitoring system with separate ports and dual environment support**
 
-## Overview
-Comprehensive system design for the renewable energy monitoring platform, showing how all components interact to create a scalable, real-time monitoring solution.
+## 📋 Overview
 
-## High-Level Architecture
+This project implements a comprehensive renewable energy IoT monitoring system with **dual environment support** and **separate ports** for each service. The system provides direct access to each service without nginx dependency, offering a simpler and more straightforward architecture.
 
-```
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   Hardware      │    │   Cloud         │    │   Web Platform  │
-│   Layer         │    │   Infrastructure │    │   & Analytics   │
-├─────────────────┤    ├─────────────────┤    ├─────────────────┤
-│ • Sensors       │    │ • MQTT Broker   │    │ • Grafana       │
-│ • Microcontrollers│  │ • Node-RED      │    │ • ThingsBoard   │
-│ • Energy Sources│    │ • InfluxDB      │    │ • Custom Web App│
-└─────────────────┘    └─────────────────┘    └─────────────────┘
-         │                       │                       │
-         └───────────────────────┼───────────────────────┘
-                                 │
-                    ┌─────────────────┐
-                    │   Data Flow     │
-                    │   Pipeline      │
-                    └─────────────────┘
-```
+### 🎯 Key Features
+- **Dual Environment**: Local development + Production deployment
+- **Separate Ports**: Direct access to each service on dedicated ports
+- **No Nginx Dependency**: Simpler architecture without reverse proxy
+- **Professional URLs**: Clean, direct service URLs
+- **SSL Ready**: Easy HTTPS implementation per service
+- **Scalable Architecture**: Easy to add new services
+- **Complete IoT Pipeline**: MQTT → Node-RED → InfluxDB → Grafana
+- **Device Simulation**: Realistic renewable energy device data simulation
+- **Comprehensive Dashboards**: 7 specialized Grafana dashboards
+- **Data Retention**: 30-day automatic data retention with cleanup
 
-## Component Details
+### 🏗️ System Architecture
 
-### 1. Hardware Layer
-- **Sensors**: Voltage, current, temperature, humidity sensors
-- **Microcontrollers**: ESP32, Arduino, or Raspberry Pi
-- **Energy Sources**: Solar panels, wind turbines, batteries
-- **Communication**: WiFi, Ethernet, or cellular connectivity
-
-### 2. Communication Layer
-- **Protocol**: MQTT (Message Queuing Telemetry Transport)
-- **Broker**: Mosquitto MQTT broker
-- **Topics**: Structured topic hierarchy for different data types
-- **Security**: TLS/SSL encryption and authentication
-
-### 3. Cloud Infrastructure
-- **Node-RED**: Visual programming for data processing
-- **InfluxDB**: Time-series database for data storage
-- **ThingsBoard**: IoT platform for device management
-- **Message Queue**: Reliable data transmission
-
-### 4. Web Platform
-- **Grafana**: Advanced visualization and dashboards
-- **ThingsBoard**: Device management and basic dashboards
-- **Custom Web App**: Tailored user interface
-- **API Layer**: RESTful APIs for data access
-
-## Data Flow Architecture
-
-### Real-Time Data Flow
-```
-Sensors → Microcontroller → MQTT → Node-RED → InfluxDB → Grafana/ThingsBoard
-   │           │           │         │          │              │
-   └───────────┴───────────┴─────────┴──────────┴──────────────┘
-                    Real-time Processing Pipeline
-```
-
-### Data Processing Pipeline
-1. **Data Collection**: Sensors continuously monitor energy parameters
-2. **Data Transmission**: MQTT messages sent to broker
-3. **Data Processing**: Node-RED flows process and validate data
-4. **Data Storage**: InfluxDB stores time-series data
-5. **Data Visualization**: Grafana and ThingsBoard display data
-6. **Data Analytics**: Advanced analysis and reporting
-
-<!-- Grey text section start -->
-<div class="text-grey">
-## Topic Structure
-
-### MQTT Topic Hierarchy
-```
-energy-monitor/
-├── devices/
-│   ├── {device-id}/
-│   │   ├── solar/
-│   │   │   ├── voltage
-│   │   │   ├── current
-│   │   │   └── power
-│   │   ├── wind/
-│   │   │   ├── voltage
-│   │   │   ├── current
-│   │   │   └── power
-│   │   └── battery/
-│   │       ├── voltage
-│   │       ├── current
-│   │       └── temperature
-│   └── status/
-│       ├── online
-│       └── health
-└── system/
-    ├── alerts
-    └── maintenance
-```
-
-## Security Architecture
-
-### Authentication & Authorization
-- **MQTT**: Username/password authentication
-- **InfluxDB**: Token-based authentication
-- **Grafana**: User management with roles
-- **ThingsBoard**: Device and user authentication
-
-### Data Protection
-- **Encryption**: TLS/SSL for all communications
-- **Access Control**: Role-based permissions
-- **Data Validation**: Input sanitization and validation
-- **Audit Logging**: Comprehensive activity tracking
-
-## Scalability Considerations
-
-### Horizontal Scaling
-- **Load Balancing**: Multiple MQTT brokers
-- **Database Sharding**: InfluxDB cluster setup
-- **Microservices**: Containerized deployment
-- **CDN**: Content delivery for web assets
-
-### Performance Optimization
-- **Caching**: Redis for frequently accessed data
-- **Compression**: Data compression for storage
-- **Indexing**: Optimized database indexes
-- **Monitoring**: System performance tracking
-
-## Deployment Architecture
-
-### Development Environment
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                    Local Development                        │
+│                    MIKRUS VPS (Production)                  │
 ├─────────────────────────────────────────────────────────────┤
-│ Docker Compose: Mosquitto, Node-RED, InfluxDB, Grafana      │
-│ Local Network: 192.168.1.x                                  │
-│ Ports: 1883, 1880, 8086, 3000                              │
+│  Port 10108: SSH Access                                     │
+│  Port 40098: MQTT Broker (IoT Devices)                      │
+│  Port 40099: Grafana Dashboard                              │
+│  Port 40100: Node-RED Editor                                │
+│  Port 40101: InfluxDB Admin                                 │
+│  Port 40102: Reserved for future use                        │
+└─────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+┌─────────────────────────────────────────────────────────────┐
+│                    DIRECT SERVICE ACCESS                     │
+├─────────────────────────────────────────────────────────────┐
+│  Grafana:     http://robert108.mikrus.xyz:40099            │
+│  Node-RED:    http://robert108.mikrus.xyz:40100            │
+│  InfluxDB:    http://robert108.mikrus.xyz:40101            │
+│  MQTT:        robert108.mikrus.xyz:40098                   │
 └─────────────────────────────────────────────────────────────┘
 ```
 
-### Production Environment
+### 🔄 Data Flow Pipeline
+
 ```
-┌─────────────────────────────────────────────────────────────┐
-│                    Production Deployment                    │
-├─────────────────────────────────────────────────────────────┤
-│ Cloud Provider: AWS/Azure/GCP                               │
-│ Container Orchestration: Kubernetes/Docker Swarm           │
-│ Load Balancer: Nginx/Traefik                                │
-│ Monitoring: Prometheus + Grafana                            │
-└─────────────────────────────────────────────────────────────┘
+┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
+│   IoT Devices   │───▶│   MQTT Broker   │───▶│   Node-RED      │───▶│   InfluxDB 2.x  │
+│   (Simulated)   │    │   (Mosquitto)   │    │   (Processing)  │    │   (Database)    │
+│                 │    │                 │    │                 │    │                 │
+│ • Photovoltaic  │    │ • Topic Routing │    │ • Data Validation│    │ • Time-series   │
+│ • Wind Turbine  │    │ • Authentication│    │ • Transformation│    │ • Measurements  │
+│ • Biogas Plant  │    │ • QoS Management│    │ • Aggregation   │    │ • Retention     │
+│ • Heat Boiler   │    │ • Message Retain│    │ • Error Handling│    │ • Flux Queries  │
+│ • Energy Storage│    │                 │    │ • Device Sim.   │    │                 │
+└─────────────────┘    └─────────────────┘    └─────────────────┘    └─────────────────┘
+                                                                              │
+                                                                              ▼
+                                                                   ┌─────────────────┐
+                                                                   │   Grafana       │
+                                                                   │ (Visualization) │
+                                                                   │                 │
+                                                                   │ • 7 Dashboards  │
+                                                                   │ • Alerts        │
+                                                                   │ • Analytics     │
+                                                                   │ • Reports       │
+                                                                   └─────────────────┘
 ```
 
-## Integration Points
-
-### External Systems
-- **Weather APIs**: For environmental data correlation
-- **Energy Grid APIs**: For grid integration data
-- **Mobile Apps**: For remote monitoring
-- **Third-party Analytics**: For advanced insights
-
-### Data Export
-- **CSV/JSON**: For data analysis tools
-- **REST APIs**: For custom integrations
-- **Webhooks**: For real-time notifications
-- **Database Connectors**: For BI tools
-
-## Next Steps
-
-1. **Review** [Technology Stack](../technology-stack/index.md) for detailed technology information
-2. **Proceed to** [Phase 1: Hardware Integration](../phases/01-hardware/index.md) for implementation
-3. **Check** [Project Setup](../project-setup/index.md) for environment preparation 
-</div>
-<!-- Grey text section end --> 
+---

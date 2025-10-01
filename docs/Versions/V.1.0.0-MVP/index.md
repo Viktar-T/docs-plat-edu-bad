@@ -14,12 +14,7 @@ This MVP demonstrates the core data flow and dashboarding capabilities using sim
 | Document                       | Description                                                      |
 |--------------------------------|------------------------------------------------------------------|
 | [Architecture](architecture.md)           | System components, workflow, and architecture diagram            |
-| [Setup Instructions](setup-instructions.md) | Prerequisites, installation, and quick start guide                |
-| [Service Configurations](service-configurations.md) | Configuration details for each service and Docker Compose         |
-| [Simulation Methods](simulation-methods.md) | How sensor data is simulated using Node-RED                      |
 | [Data Flow](data-flow.md)                   | Data movement between services and retention notes                |
-| [Testing Procedures](testing-procedures.md) | How to test the system, verify data flow, and troubleshoot       |
-| [Maintenance & Operations](maintenance.md)  | Starting/stopping services, logs, updates, and backups           |
 
 ---
 
