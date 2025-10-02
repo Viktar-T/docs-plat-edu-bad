@@ -8,8 +8,8 @@ const config = {
     v4: true,
   },
 
-  url: 'https://viktar-t.github.io',
-  baseUrl: '/docs-plat-edu-bad/',
+  url: 'https://docs-plat-edu-bad.vercel.app',
+  baseUrl: '/',
 
   organizationName: 'Viktar-T',
   projectName: 'docs-plat-edu-bad',

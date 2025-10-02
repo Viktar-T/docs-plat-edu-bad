@@ -2,7 +2,7 @@
   "name": "docs-plat-edu-bad",
   "version": "0.0.0",
   "private": true,
-  "homepage": "https://viktar-t.github.io/docs-plat-edu-bad/",
+  "homepage": "https://docs-plat-edu-bad.vercel.app/",
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
