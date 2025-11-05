@@ -4,7 +4,7 @@ This website is built using [Docusaurus](https://docusaurus.io/), a modern stati
 
 ## 🚀 Live Site
 
-Visit the documentation at: https://viktar-t.github.io/docs-plat-edu-bad/
+Visit the documentation at: https://docs-plat-edu-bad.vercel.app/
 
 ## Installation
 
@@ -55,7 +55,7 @@ GIT_USER=Viktar-T npm run deploy
 1. Go to your repository settings on GitHub
 2. Navigate to "Pages" in the left sidebar
 3. Under "Source", select "GitHub Actions"
-4. The site will be available at: https://viktar-t.github.io/docs-plat-edu-bad/
+4. The site will be available at: https://docs-plat-edu-bad.vercel.app/
 
 ## Project Structure
 

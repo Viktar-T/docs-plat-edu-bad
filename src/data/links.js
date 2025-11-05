@@ -43,10 +43,10 @@ const projectLinks = {
 
   // Demo/Live applications
   demos: {
-    frontend: {
-      label: 'Deployed Frontend App',
-      url: 'https://viktar-t.github.io/plat-edu-bad-front/',
-      description: 'Live demo of the frontend application',
+    documentation: {
+      label: 'Documentation Site',
+      url: 'https://docs-plat-edu-bad.vercel.app/',
+      description: 'Deployed documentation website',
     },
   },
 

@@ -1,4 +1,4 @@
-import projectLinks, { getGitHubRepos, getDeployedServices } from '@site/src/data/links';
+import projectLinks, { getGitHubRepos, getDeployedServices, getDemos } from '@site/src/data/links';
 
 # Project Phases
 
@@ -17,31 +17,31 @@ The project consists of four technological phases — Hardware Integration and D
 
 ## Project Structure
 
-### 🏗️ [System Architecture](./architecture/index.md)
+### 🏗️ [System Architecture](../architecture/index.md)
 
 Detailed system design, component interactions, and data flow diagrams.
 
-### 📊 [Phase 1: Hardware Integration](./phases/01-hardware/index.md)
+### 📊 [Phase 1: Hardware Integration](./01-hardware/index.md)
 
 Hardware setup, sensor integration, and MQTT communication configuration.
 
-### ☁️ [Phase 2: Cloud Infrastructure](./phases/02-cloud/index.md)
+### ☁️ [Phase 2: Cloud Infrastructure](./02-cloud/index.md)
 
 Cloud platform setup including Node-RED, InfluxDB, and ThingsBoard.
 
-### 🌐 [Phase 3: Web Platform](./phases/03-web/index.md)
+### 🌐 [Phase 3: Web Platform](./03-web/index.md)
 
 Web application development, Grafana dashboards, and user management.
 
-### 📈 [Phase 4: Visualization](./phases/04-visualization/index.md)
+### 📈 [Phase 4: Visualization](./04-visualization/index.md)
 
 Real-time visualization, historical data analysis, and reporting.
 
-### 📊 [Phase 5: Analytics](./phases/05-analytics/index.md)
+### 📊 [Phase 5: Analytics](./05-analytics/index.md)
 
 Advanced analytics, machine learning, and predictive modeling.
 
-### 📚 [References](./references/index.md)
+### 📚 [References](../references/index.md)
 
 External resources, documentation links, and further reading materials.
 
@@ -63,6 +63,16 @@ External resources, documentation links, and further reading materials.
   {getGitHubRepos().map((repo) => (
     <li key={repo.url}>
       <strong><a href={repo.url}>{repo.label}</a></strong> - {repo.description}
+    </li>
+  ))}
+</ul>
+
+### Demo/Live Applications
+
+<ul>
+  {getDemos().map((demo) => (
+    <li key={demo.url}>
+      <strong><a href={demo.url}>{demo.label}</a></strong> - {demo.description}
     </li>
   ))}
 </ul>

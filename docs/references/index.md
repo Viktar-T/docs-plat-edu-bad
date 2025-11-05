@@ -1,4 +1,4 @@
-import projectLinks, { getGitHubRepos, getDeployedServices } from '@site/src/data/links';
+import projectLinks, { getGitHubRepos, getDeployedServices, getDemos } from '@site/src/data/links';
 
 # References & Resources
 
@@ -18,6 +18,16 @@ import projectLinks, { getGitHubRepos, getDeployedServices } from '@site/src/dat
   {getGitHubRepos().map((repo) => (
     <li key={repo.url}>
       <strong><a href={repo.url}>{repo.label}</a></strong> - {repo.description}
+    </li>
+  ))}
+</ul>
+
+### Demo/Live Applications
+
+<ul>
+  {getDemos().map((demo) => (
+    <li key={demo.url}>
+      <strong><a href={demo.url}>{demo.label}</a></strong> - {demo.description}
     </li>
   ))}
 </ul>
