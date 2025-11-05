@@ -1,8 +1,42 @@
+import projectLinks, { getGitHubRepos, getDeployedServices } from '@site/src/data/links';
+
 # References & Resources
+
+## 🔗 Project Links
+
+### Web Application
+
+<ul>
+  <li>
+    <strong><a href={projectLinks.webApp.url}>{projectLinks.webApp.label}</a></strong> - {projectLinks.webApp.description}
+  </li>
+</ul>
+
+### GitHub Repositories
+
+<ul>
+  {getGitHubRepos().map((repo) => (
+    <li key={repo.url}>
+      <strong><a href={repo.url}>{repo.label}</a></strong> - {repo.description}
+    </li>
+  ))}
+</ul>
+
+### Deployed Services
+
+<ul>
+  {getDeployedServices().map((service) => (
+    <li key={service.url}>
+      <strong><a href={service.url}>{service.label}</a></strong> - {service.description}
+    </li>
+  ))}
+</ul>
+
+---
 
 ## Overview
 
-Comprehensive collection of external resources, official documentation, tutorials, and community forums for all technologies used in the renewable energy monitoring platform.
+Collection of external resources, official documentation, tutorials, and community forums for all technologies used in the renewable energy monitoring platform.
 
 ## Official Documentation
 

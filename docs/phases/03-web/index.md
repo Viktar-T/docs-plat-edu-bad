@@ -1,4 +1,4 @@
-# Phase 3: Web Platform Development
+# Phase 3: Web Platform Development - In Progress
 
 ## Overview
 

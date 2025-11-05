@@ -1,28 +1,78 @@
+import projectLinks, { getGitHubRepos, getDeployedServices } from '@site/src/data/links';
+
 # Project Phases
 
-This section contains documentation for all four phases of the Educational Platform for Bad Data Science project. Each phase represents a distinct component of the system that integrates to form the complete educational platform.
+## Project title: Real-Time Monitoring Educational and Research Platform for Integrated Renewable Energy Sources and Energy Storage Systems
 
-## Phase Overview
+## Project Overview
 
-The project is structured into four main phases, each building upon the previous to create a comprehensive educational platform:
+The platform will be used for educational and research purposes, enabling students, educators, and researchers to monitor, analyze, and visualize energy data from various sources present in the [Katedra Inżynierii Odnawialnych Źródeł Energii, ZUT](https://wksir.zut.edu.pl/struktura-wydzialu/katedra-inzynierii-odnawialnych-zrodel-energii.html).
+The project consists of four technological phases — Hardware Integration and Data Acquisition, Cloud Infrastructure and Data Handling, Web Platform Development, and Visualization and Analytics.
 
-### [Phase 1: Hardware](./01-hardware/index.md)
-The foundation phase focuses on IoT devices and sensor networks for data collection. 
+### Target Audience
 
-### [Phase 2: Cloud Infrastructure](./02-cloud/index.md)
-The backend phase implements scalable cloud services for data processing and storage.
+- **Educators**: Teaching renewable energy concepts and IoT monitoring
+- **Researchers**: Conducting energy system analysis and optimization studies
+- **Students**: Learning practical IoT and energy monitoring skills
 
-### [Phase 3: Web Application](./03-web/index.md)
-The frontend phase creates an intuitive web interface for user interaction:
-- **Technology Stack**: React.
+## Project Structure
 
-### [Phase 4: Visualization & Analytics](./04-visualization/index.md)
-The analytics phase provides advanced data analysis and visualization capabilities.
+### 🏗️ [System Architecture](./architecture/index.md)
 
+Detailed system design, component interactions, and data flow diagrams.
 
-### Data Flow
-1. **Hardware → Cloud**: Sensor data transmitted via MQTT/HTTP to cloud services
-2. **Cloud → Web**: Real-time data streaming and API responses to web application
-3. **Cloud → Visualization**: Processed data feeding analytics and visualization components
-4. **Web ↔ Visualization**: Interactive integration for user-driven analytics
+### 📊 [Phase 1: Hardware Integration](./phases/01-hardware/index.md)
 
+Hardware setup, sensor integration, and MQTT communication configuration.
+
+### ☁️ [Phase 2: Cloud Infrastructure](./phases/02-cloud/index.md)
+
+Cloud platform setup including Node-RED, InfluxDB, and ThingsBoard.
+
+### 🌐 [Phase 3: Web Platform](./phases/03-web/index.md)
+
+Web application development, Grafana dashboards, and user management.
+
+### 📈 [Phase 4: Visualization](./phases/04-visualization/index.md)
+
+Real-time visualization, historical data analysis, and reporting.
+
+### 📊 [Phase 5: Analytics](./phases/05-analytics/index.md)
+
+Advanced analytics, machine learning, and predictive modeling.
+
+### 📚 [References](./references/index.md)
+
+External resources, documentation links, and further reading materials.
+
+---
+
+## 🔗 Project Links
+
+### Web Application
+
+<ul>
+  <li>
+    <strong><a href={projectLinks.webApp.url}>{projectLinks.webApp.label}</a></strong> - {projectLinks.webApp.description}
+  </li>
+</ul>
+
+### GitHub Repositories
+
+<ul>
+  {getGitHubRepos().map((repo) => (
+    <li key={repo.url}>
+      <strong><a href={repo.url}>{repo.label}</a></strong> - {repo.description}
+    </li>
+  ))}
+</ul>
+
+### Deployed Services
+
+<ul>
+  {getDeployedServices().map((service) => (
+    <li key={service.url}>
+      <strong><a href={service.url}>{service.label}</a></strong> - {service.description}
+    </li>
+  ))}
+</ul>

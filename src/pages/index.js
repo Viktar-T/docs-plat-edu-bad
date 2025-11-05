@@ -1,6 +1,7 @@
 import clsx from 'clsx';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
+import Link from '@docusaurus/Link';
 
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
@@ -10,14 +11,23 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
-        </Heading>
         <p className="hero__subtitle" style={{fontSize: '1.5rem', marginBottom: '0.5rem'}}>
-          Katedra Inżynierii Odnawialnych Źródeł Energii
+          <a 
+            href="https://wksir.zut.edu.pl/struktura-wydzialu/katedra-inzynierii-odnawialnych-zrodel-energii.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{color: 'inherit', textDecoration: 'underline'}}>
+            Katedra Inżynierii Odnawialnych Źródeł Energii
+          </a>
         </p>
         <p className="hero__subtitle" style={{fontSize: '1.5rem', marginBottom: '0.5rem'}}>
-          Technikum Łączności i Multimediów Cyfrowych w Szczecinie
+          <a 
+            href="https://www.tlimc.szczecin.pl/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{color: 'inherit', textDecoration: 'underline'}}>
+            Technikum Łączności i Multimediów Cyfrowych w Szczecinie
+          </a>
         </p>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
       </div>
@@ -49,6 +59,54 @@ export default function Home() {
                     }}
                   />
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className={styles.navigationSection}>
+          <div className="container">
+            <div className="row">
+              <div className="col col--6 col--4">
+                <Link
+                  className={`${styles.navButton} ${styles.labEquipmentButton}`}
+                  to="/docs/laboratories-and-equipment">
+                  Laboratories & Equipment
+                </Link>
+              </div>
+              <div className="col col--6 col--4">
+                <Link
+                  className={styles.navButton}
+                  to="/docs/architecture">
+                  System Architecture
+                </Link>
+              </div>
+              <div className="col col--6 col--4">
+                <Link
+                  className={styles.navButton}
+                  to="/docs/phases">
+                  Project Phases
+                </Link>
+              </div>
+              <div className="col col--6 col--4">
+                <Link
+                  className={styles.navButton}
+                  to="/docs/Versions">
+                  Versions
+                </Link>
+              </div>
+              <div className="col col--6 col--4">
+                <Link
+                  className={styles.navButton}
+                  to="/docs/references">
+                  References
+                </Link>
+              </div>
+              <div className="col col--6 col--4">
+                <Link
+                  className={styles.navButton}
+                  to="/docs/contributors">
+                  Contributors
+                </Link>
               </div>
             </div>
           </div>
