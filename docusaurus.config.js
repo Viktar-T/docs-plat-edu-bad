@@ -49,8 +49,8 @@ const config = {
         title: 'Main Page',
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            type: 'doc',
+            docId: 'laboratories-and-equipment/index',
             position: 'left',
             label: 'Tutorial',
           },
