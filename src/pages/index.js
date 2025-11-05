@@ -43,70 +43,51 @@ export default function Home() {
       description="IoT Educational and Research Platform">
       <HomepageHeader />
       <main>
-        <section className={styles.features}>
+        <section className={styles.mainContent}>
           <div className="container">
             <div className="row">
-              <div className="col col--12">
-                <div className="text--center">
+              <div className={`col col--6 ${styles.imageColumn}`}>
+                <div className={styles.imageWrapper}>
                   <img 
                     src="img/edu-bad-plat.png" 
                     alt="IoT Educational and Research Platform" 
-                    style={{
-                      maxWidth: '70%',
-                      height: 'auto',
-                      margin: '0.5rem auto',
-                      display: 'block'
-                    }}
+                    className={styles.mainImage}
                   />
                 </div>
               </div>
-            </div>
-          </div>
-        </section>
-        <section className={styles.navigationSection}>
-          <div className="container">
-            <div className="row">
-              <div className="col col--6 col--4">
-                <Link
-                  className={`${styles.navButton} ${styles.labEquipmentButton}`}
-                  to="/docs/laboratories-and-equipment">
-                  Laboratories & Equipment
-                </Link>
-              </div>
-              <div className="col col--6 col--4">
-                <Link
-                  className={styles.navButton}
-                  to="/docs/architecture">
-                  System Architecture
-                </Link>
-              </div>
-              <div className="col col--6 col--4">
-                <Link
-                  className={styles.navButton}
-                  to="/docs/phases">
-                  Project Phases
-                </Link>
-              </div>
-              <div className="col col--6 col--4">
-                <Link
-                  className={styles.navButton}
-                  to="/docs/Versions">
-                  Versions
-                </Link>
-              </div>
-              <div className="col col--6 col--4">
-                <Link
-                  className={styles.navButton}
-                  to="/docs/references">
-                  References
-                </Link>
-              </div>
-              <div className="col col--6 col--4">
-                <Link
-                  className={styles.navButton}
-                  to="/docs/contributors">
-                  Contributors
-                </Link>
+              <div className={`col col--6 ${styles.buttonsColumn}`}>
+                <div className={styles.buttonsGrid}>
+                  <Link
+                    className={`${styles.navButton} ${styles.labEquipmentButton}`}
+                    to="/docs/laboratories-and-equipment">
+                    Laboratories & Equipment
+                  </Link>
+                  <Link
+                    className={styles.navButton}
+                    to="/docs/architecture">
+                    System Architecture
+                  </Link>
+                  <Link
+                    className={styles.navButton}
+                    to="/docs/phases">
+                    Project Phases
+                  </Link>
+                  <Link
+                    className={styles.navButton}
+                    to="/docs/Versions">
+                    Versions
+                  </Link>
+                  <Link
+                    className={styles.navButton}
+                    to="/docs/references">
+                    References
+                  </Link>
+                  <Link
+                    className={styles.navButton}
+                    to="/docs/contributors">
+                    Contributors
+                  </Link>
+                </div>
               </div>
             </div>
           </div>

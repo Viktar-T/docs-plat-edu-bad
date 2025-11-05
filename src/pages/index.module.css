@@ -16,27 +16,53 @@
   }
 }
 
-.features {
-  display: flex;
-  align-items: center;
-  padding: 2rem 0;
-  width: 100%;
-}
-
-.navigationSection {
+.mainContent {
   display: flex;
   align-items: center;
   padding: 3rem 0;
   width: 100%;
-  background-color: var(--ifm-background-color);
+  min-height: 60vh;
+}
+
+.imageColumn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.imageWrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainImage {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.buttonsColumn {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+}
+
+.buttonsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  width: 100%;
 }
 
 .navButton {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1rem 2rem;
-  margin: 0.75rem;
+  padding: 1rem 1.5rem;
+  margin: 0;
   border-radius: 12px;
   border: 2px solid var(--ifm-color-primary);
   background-color: var(--ifm-background-color);
@@ -94,8 +120,26 @@
 }
 
 @media screen and (max-width: 996px) {
+  .mainContent {
+    padding: 2rem 0;
+    min-height: auto;
+  }
+
+  .imageColumn {
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .buttonsColumn {
+    padding: 1rem;
+  }
+
+  .buttonsGrid {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
   .navButton {
-    margin: 0.5rem;
     padding: 0.875rem 1.5rem;
     font-size: 0.95rem;
     border-radius: 10px;

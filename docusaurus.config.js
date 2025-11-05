@@ -84,14 +84,6 @@ const config = {
                 label: 'GitHub - Documentation',
                 href: 'https://github.com/Viktar-T/docs-plat-edu-bad',
               },
-              {
-                label: 'GitHub - FrontEnd',
-                href: '#',
-              },
-              {
-                label: 'GitHub - BackEnd',
-                href: '#',
-              },
             ],
           },
         ],
