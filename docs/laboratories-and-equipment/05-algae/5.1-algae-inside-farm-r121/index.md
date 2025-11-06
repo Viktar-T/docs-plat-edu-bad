@@ -2,7 +2,7 @@
 
 Indoor algae farm system for biofuel and biomass production research.
 
-**Location:** R121  
+**Location:** Room  
 **Type:** Algae System  
 **Configuration:** Indoor Algae Farm
 
@@ -44,7 +44,7 @@ The system is already connected to a small on-board PC. The PC communicates with
 
 ## Features
 
-- Indoor algae cultivation
+- Algae cultivation
 - Controlled growth environment
 - Biofuel production research
 - Biomass generation

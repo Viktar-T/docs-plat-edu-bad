@@ -2,7 +2,6 @@
 
 ## Overview
 
-House automation, monitoring, and energy management systems.
 
 ## Equipment List
 

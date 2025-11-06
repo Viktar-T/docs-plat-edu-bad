@@ -6,11 +6,18 @@
  */
 
 const projectLinks = {
-  // Main web application
+  // Web applications
   webApp: {
-    label: 'IoT Platforma Edu-Badawcza',
-    url: 'https://edu.latacko.pl/',
-    description: 'Main web application for the IoT Educational and Research Platform',
+    platforma: {
+      label: 'IoT Platforma Edu-Badawcza',
+      url: 'https://edu.latacko.pl/',
+      description: 'Main web application for the IoT Educational and Research Platform',
+    },
+    documentation: {
+      label: 'Documentation Site',
+      url: 'https://docs-plat-edu-bad.vercel.app/',
+      description: 'Deployed documentation website',
+    },
   },
 
   // GitHub repositories
@@ -41,15 +48,6 @@ const projectLinks = {
     },
   },
 
-  // Demo/Live applications
-  demos: {
-    documentation: {
-      label: 'Documentation Site',
-      url: 'https://docs-plat-edu-bad.vercel.app/',
-      description: 'Deployed documentation website',
-    },
-  },
-
   // Deployed infrastructure services
   deployed: {
     nodeRed: {
@@ -71,6 +69,14 @@ const projectLinks = {
 };
 
 /**
+ * Helper function to get all web applications as an array
+ * Useful for rendering lists of web applications
+ */
+export function getWebApps() {
+  return Object.values(projectLinks.webApp);
+}
+
+/**
  * Helper function to get all GitHub repositories as an array
  * Useful for rendering lists of repositories
  */
@@ -83,13 +89,6 @@ export function getGitHubRepos() {
  */
 export function getInstitutions() {
   return Object.values(projectLinks.institutions);
-}
-
-/**
- * Helper function to get all demo links as an array
- */
-export function getDemos() {
-  return Object.values(projectLinks.demos);
 }
 
 /**

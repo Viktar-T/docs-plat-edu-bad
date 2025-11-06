@@ -32,10 +32,10 @@ Large vertical-axis wind turbine with integrated energy storage and inverter sys
 
 ---
 
-## Wind-Small-Horizontal
-Small horizontal-axis wind turbine for wind energy experiments.
+## Solar-Wind Hybrid Station
+Solar/Wind hybrid energy generation station combining both solar and wind energy capabilities.
 
-![Wind-Small-Horizontal](/labs/2.2.%20Wind-Small-Horizontal/2.2.%20Wind-Small-Horizontal.jpg)
+![Solar-Wind Hybrid Station](/labs/2.2.%20Solar-Wind%20Hybrid%20Station/2.2.%20Wind-Small-Horizontal.jpg)
 
 ---
 

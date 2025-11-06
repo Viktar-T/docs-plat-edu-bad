@@ -2,7 +2,7 @@
 
 Engine testing and research bench for performance analysis and optimization.
 
-**Location:** R121  
+**Location:** Room  
 **Type:** Engine Testing Equipment  
 **Configuration:** Research Bench
 

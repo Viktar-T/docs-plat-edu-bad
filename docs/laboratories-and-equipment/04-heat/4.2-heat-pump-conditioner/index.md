@@ -15,6 +15,4 @@ Heat pump and air conditioning system for efficient climate control.
 
 - Heat pump technology
 - Air conditioning capabilities
-- Energy-efficient operation
-- Climate control research
 - Educational demonstration system

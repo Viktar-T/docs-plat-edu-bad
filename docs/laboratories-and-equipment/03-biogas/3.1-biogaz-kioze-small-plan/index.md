@@ -55,8 +55,4 @@ System wiring and communication architecture are unclear due to lack of document
 ## Features
 
 - Small-scale biogas production
-- KIOZE technology demonstration
-- Organic waste conversion
-- Biogas storage and utilization
-- Process monitoring and control
 - Educational and research applications

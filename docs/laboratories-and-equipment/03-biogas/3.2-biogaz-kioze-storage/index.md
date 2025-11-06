@@ -15,7 +15,4 @@ KIOZE biogas storage system for biogas management and distribution.
 ## Features
 
 - Biogas storage capacity
-- Pressure management system
-- Safe storage and handling
-- Distribution control
 - Integration with biogas production system

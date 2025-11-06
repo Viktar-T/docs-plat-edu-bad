@@ -2,7 +2,7 @@
 
 Outdoor photovoltaic installation for solar energy generation and monitoring.
 
-**Location:** R06  
+**Location:** Room  
 **Type:** Photovoltaic System  
 **Configuration:** Outdoor Installation
 
@@ -67,5 +67,3 @@ To avoid dependence on the cloud and improve reliability:
 - Outdoor photovoltaic panel installation
 - Sofar inverter system (1.1K/3.3KTL-G3)
 - WiFi logger for remote monitoring
-- Real-time data collection capabilities
-- Educational and research applications

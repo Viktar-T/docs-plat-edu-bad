@@ -17,7 +17,7 @@ Documentation about all laboratory equipment and systems available in the [Kated
 ### 💨 Wind Energy Systems
 
 - [2.1 Wind-Big-Vertical-Storage--Under maintanance](./02-wind/2.1-wind-big-vertical-storage/index.md)
-- [**2.2 Wind-Small-Horizontal--InProgress**](./02-wind/2.2-wind-small-horizontal/index.md)
+- [**2.2 Solar-Wind Hybrid Station--InProgress**](./02-wind/2.2-solar-wind-hybrid-station/index.md)
 
 ### ⛽ Biogas Systems
 
@@ -45,4 +45,3 @@ Documentation about all laboratory equipment and systems available in the [Kated
 
 ---
 
-All equipment documentation, specifications, installation manuals, and images are organized by category in the subfolders below.

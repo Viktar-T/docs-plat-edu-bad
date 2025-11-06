@@ -1,4 +1,4 @@
-import projectLinks, { getGitHubRepos, getDeployedServices, getDemos } from '@site/src/data/links';
+import { getWebApps, getGitHubRepos, getDeployedServices } from '@site/src/data/links';
 
 # Project Phases
 
@@ -16,10 +16,6 @@ The project consists of four technological phases — Hardware Integration and D
 - **Students**: Learning practical IoT and energy monitoring skills
 
 ## Project Structure
-
-### 🏗️ [System Architecture](../architecture/index.md)
-
-Detailed system design, component interactions, and data flow diagrams.
 
 ### 📊 [Phase 1: Hardware Integration](./01-hardware/index.md)
 
@@ -52,9 +48,11 @@ External resources, documentation links, and further reading materials.
 ### Web Application
 
 <ul>
-  <li>
-    <strong><a href={projectLinks.webApp.url}>{projectLinks.webApp.label}</a></strong> - {projectLinks.webApp.description}
-  </li>
+  {getWebApps().map((app) => (
+    <li key={app.url}>
+      <strong><a href={app.url}>{app.label}</a></strong> - {app.description}
+    </li>
+  ))}
 </ul>
 
 ### GitHub Repositories
@@ -63,16 +61,6 @@ External resources, documentation links, and further reading materials.
   {getGitHubRepos().map((repo) => (
     <li key={repo.url}>
       <strong><a href={repo.url}>{repo.label}</a></strong> - {repo.description}
-    </li>
-  ))}
-</ul>
-
-### Demo/Live Applications
-
-<ul>
-  {getDemos().map((demo) => (
-    <li key={demo.url}>
-      <strong><a href={demo.url}>{demo.label}</a></strong> - {demo.description}
     </li>
   ))}
 </ul>

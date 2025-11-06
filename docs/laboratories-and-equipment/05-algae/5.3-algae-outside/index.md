@@ -17,8 +17,9 @@ Acceess through LAN ZUT.
 
 ## Features
 
-- Outdoor cultivation environment
-- Natural growth conditions
-- Environmental impact research
-- Comparative studies with indoor systems
-- Natural resource utilization
+- Algae cultivation
+- Controlled growth environment
+- Biofuel production research
+- Biomass generation
+- Monitoring and control systems
+- Educational and research applications

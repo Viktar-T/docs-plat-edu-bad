@@ -64,11 +64,6 @@ export default function Home() {
                   </Link>
                   <Link
                     className={styles.navButton}
-                    to="/docs/architecture">
-                    System Architecture
-                  </Link>
-                  <Link
-                    className={styles.navButton}
                     to="/docs/phases">
                     Project Phases
                   </Link>

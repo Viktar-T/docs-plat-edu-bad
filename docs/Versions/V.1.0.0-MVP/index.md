@@ -1,4 +1,4 @@
-import projectLinks, { getGitHubRepos, getDeployedServices, getDemos } from '@site/src/data/links';
+import { getWebApps, getGitHubRepos, getDeployedServices } from '@site/src/data/links';
 
 # Version: V.1.0.0 - MVP - Local, VPS
 
@@ -7,9 +7,11 @@ import projectLinks, { getGitHubRepos, getDeployedServices, getDemos } from '@si
 ### Web Application
 
 <ul>
-  <li>
-    <strong><a href={projectLinks.webApp.url}>{projectLinks.webApp.label}</a></strong> - {projectLinks.webApp.description}
-  </li>
+  {getWebApps().map((app) => (
+    <li key={app.url}>
+      <strong><a href={app.url}>{app.label}</a></strong> - {app.description}
+    </li>
+  ))}
 </ul>
 
 ### GitHub Repositories
@@ -18,16 +20,6 @@ import projectLinks, { getGitHubRepos, getDeployedServices, getDemos } from '@si
   {getGitHubRepos().map((repo) => (
     <li key={repo.url}>
       <strong><a href={repo.url}>{repo.label}</a></strong> - {repo.description}
-    </li>
-  ))}
-</ul>
-
-### Demo/Live Applications
-
-<ul>
-  {getDemos().map((demo) => (
-    <li key={demo.url}>
-      <strong><a href={demo.url}>{demo.label}</a></strong> - {demo.description}
     </li>
   ))}
 </ul>

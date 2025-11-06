@@ -2,7 +2,7 @@
 
 Indoor algae tube cultivation system for advanced algae research.
 
-**Location:** R121  
+**Location:** Room  
 **Type:** Algae System  
 **Configuration:** Indoor Tube System
 
@@ -25,7 +25,4 @@ This indoor algae tube cultivation system uses a specialized tube-based design f
 ## Features
 
 - Tube-based cultivation system
-- High-density algae growth
-- Efficient harvesting design
-- Advanced cultivation technology
 - Research and development applications
