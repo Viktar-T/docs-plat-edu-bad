@@ -20,15 +20,6 @@ function HomepageHeader() {
             Katedra Inżynierii Odnawialnych Źródeł Energii
           </a>
         </p>
-        <p className="hero__subtitle" style={{fontSize: '1.5rem', marginBottom: '0.5rem'}}>
-          <a 
-            href="https://www.tlimc.szczecin.pl/"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{color: 'inherit', textDecoration: 'underline'}}>
-            Technikum Łączności i Multimediów Cyfrowych w Szczecinie
-          </a>
-        </p>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
       </div>
     </header>
