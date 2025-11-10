@@ -6,8 +6,7 @@ import { getWebApps, getGitHubRepos, getDeployedServices } from '@site/src/data/
 
 ## Project Overview
 
-The platform will be used for educational and research purposes, enabling students, educators, and researchers to monitor, analyze, and visualize energy data from various sources present in the [Katedra Inżynierii Odnawialnych Źródeł Energii, ZUT](https://wksir.zut.edu.pl/struktura-wydzialu/katedra-inzynierii-odnawialnych-zrodel-energii.html).
-The project consists of four technological phases — Hardware Integration and Data Acquisition, Cloud Infrastructure and Data Handling, Web Platform Development, and Visualization and Analytics.
+The initiative delivers a two-layer experience: an Astro-based official landing site (`oze.zut.edu.pl`) hosted on the university’s infrastructure and the Docker-orchestrated OZE-Platforma-EduBad stack on the VPS. The VPS environment combines Node-RED, InfluxDB, Grafana, an Express API Gateway, and a React frontend to provide simulated (and future physical) renewable energy scenarios for education and research.
 
 ### Target Audience
 
@@ -19,23 +18,23 @@ The project consists of four technological phases — Hardware Integration and D
 
 ### 📊 [Phase 1: Hardware Integration](./01-hardware/index.md)
 
-Hardware setup, sensor integration, and MQTT communication configuration.
+Hardware setup, sensor integration, simulated telemetry sources, and MQTT or future device connectivity routed into Node-RED.
 
 ### ☁️ [Phase 2: Cloud Infrastructure](./02-cloud/index.md)
 
-Cloud platform setup including Node-RED, InfluxDB, and ThingsBoard.
+Containerized data services on the VPS: Node-RED flows, InfluxDB storage, Grafana dashboards, API Gateway foundations, and shared services deployed with Docker Compose.
 
 ### 🌐 [Phase 3: Web Platform](./03-web/index.md)
 
-Web application development, Grafana dashboards, and user management.
+React frontend development, API Gateway consumption, authentication, and integration of Grafana resources into a unified platform experience surfaced from the VPS layer.
 
 ### 📈 [Phase 4: Visualization](./04-visualization/index.md)
 
-Real-time visualization, historical data analysis, and reporting.
+Grafana workspace curation, embedded dashboards, scenario-based views, and reporting pipelines exposed through the frontend and API Gateway.
 
 ### 📊 [Phase 5: Analytics](./05-analytics/index.md)
 
-Advanced analytics, machine learning, and predictive modeling.
+Advanced analytics, machine learning, predictive modeling, and future enhancements that extend the API surface with derived insights.
 
 ### 📚 [References](../references/index.md)
 
