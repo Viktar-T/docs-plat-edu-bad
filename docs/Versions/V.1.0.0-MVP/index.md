@@ -1,8 +1,8 @@
 import { getWebApps, getGitHubRepos, getDeployedServices } from '@site/src/data/links';
 
-# Version: V1.1.0 – Astro Landing & VPS Platform Architecture
+# Version: V1.1.0 – Next.js Landing & VPS Platform Architecture
 
-This release formalizes the split between the official Astro-based landing page (`oze.zut.edu.pl` on ZUT shared hosting) and the containerized OZE-Platforma-EduBad environment on the VPS. The VPS stack runs InfluxDB, Node-RED, Grafana, an Express API Gateway, and a React frontend that aggregates all research and educational functionality.
+This release formalizes the split between the official Next.js-based landing page (`oze.zut.edu.pl` on ZUT shared hosting) and the containerized OZE-Platforma-EduBad environment on the VPS. The VPS stack runs InfluxDB, Node-RED, Grafana, an Express API Gateway, and a React frontend that aggregates all research and educational functionality.
 
 ## 🔗 Project Links
 
@@ -42,14 +42,14 @@ This release formalizes the split between the official Astro-based landing page 
 
 The platform is delivered through two coordinated layers:
 
-- **Official Landing (`oze.zut.edu.pl`)** — Astro static site hosted on the university’s Apache/PHP infrastructure. It provides faculty and project information and routes visitors to the interactive platform.
+- **Official Landing (`oze.zut.edu.pl`)** — Next.js application exported for the university’s Apache/PHP infrastructure. It provides faculty and project information and routes visitors to the interactive platform.
 - **Research & Education Platform (VPS)** — Docker Compose orchestrates InfluxDB, Node-RED, Grafana, an Express-based API Gateway, and a React frontend. This environment hosts synthetic scenarios today and is engineered for future physical integrations.
 
 ## Main Components
 
 | Component | Description | Technology |
 | --- | --- | --- |
-| Astro Landing Page (`oze.zut.edu.pl`) | Official public site with institutional branding, documentation, and routing to the platform. | Astro, static hosting (Apache/PHP) |
+| Next.js Landing Page (`oze.zut.edu.pl`) | Official public site with institutional branding, documentation, and routing to the platform. | Next.js, static export (Apache/PHP) |
 | React Frontend (Platform UI) | Primary user interface on the VPS, consuming the API Gateway and embedding authorized Grafana resources. | React, Vite build |
 | API Gateway | Unified external API, request routing, access control, and service abstraction for frontend clients. | Node.js, Express |
 | Node-RED | Orchestrates simulated and live data flows, educational scenarios, and integrations with external sources. | Node-RED |
@@ -73,7 +73,7 @@ The platform is delivered through two coordinated layers:
 ```
 ┌─────────────────────────┐           ┌──────────────────────────────────────────────┐
 │ oze.zut.edu.pl          │           │ platform.oze.zut.edu.pl (VPS, Docker)        │
-│ Astro Landing (Apache)  │           │                                              │
+│ Next.js Landing (Apache)│           │                                              │
 │ • Project overview      │   link    │  ┌────────────────────────────────────────┐  │
 │ • Team & documentation  │──────────▶│  │ React Frontend                         │  │
 │ • Entry point to VPS    │           │  │ • Authentication & routing             │  │

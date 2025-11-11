@@ -6,7 +6,7 @@ import { getWebApps, getGitHubRepos, getDeployedServices } from '@site/src/data/
 
 ## Project Overview
 
-The initiative delivers a two-layer experience: an Astro-based official landing site (`oze.zut.edu.pl`) hosted on the university’s infrastructure and the Docker-orchestrated OZE-Platforma-EduBad stack on the VPS. The VPS environment combines Node-RED, InfluxDB, Grafana, an Express API Gateway, and a React frontend to provide simulated (and future physical) renewable energy scenarios for education and research.
+The initiative delivers a two-layer experience: a Next.js-based official landing site (`oze.zut.edu.pl`) hosted on the university’s infrastructure and the Docker-orchestrated OZE-Platforma-EduBad stack on the VPS. The VPS environment combines Node-RED, InfluxDB, Grafana, an Express API Gateway, and a React frontend to provide simulated (and future physical) renewable energy scenarios for education and research.
 
 ### Target Audience
 

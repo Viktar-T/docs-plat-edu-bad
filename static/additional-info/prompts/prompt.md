@@ -14,7 +14,7 @@ You are given an existing `index.md` file (MDX-compatible). It currently:
   - port-based access do Node-RED / Grafana,
   - uproszczoną strukturą bez API Gateway i dedykowanego frontendu.
 - Nie odzwierciedla:
-  - podziału na oficjalną stronę `oze.zut.edu.pl` (Astro),
+  - podziału na oficjalną stronę `oze.zut.edu.pl` (Next.js),
   - architektury opartej o kontenery: InfluxDB, Node-RED, Grafana, API Gateway, React frontend na VPS.
 
 You must produce a **complete, updated version** of `index.md` that replaces the old content.
@@ -28,7 +28,7 @@ Use the following as canonical:
 ### 2.1. Warstwa oficjalna – `oze.zut.edu.pl` (Landing/Label)
 
 - Publiczna, oficjalna strona Katedry i projektu.
-- Zaimplementowana w **Astro** jako statyczny serwis.
+- Zaimplementowana w **Next.js** jako statyczny serwis (eksportowany na infrastrukturę Apache/PHP uczelni).
 - Hostowana na współdzielonym serwerze uczelni (Apache/PHP).
 - Rola:
   - prezentacja katedry,
@@ -80,12 +80,12 @@ Podczas aktualizacji:
    - Ustaw wyraźny nagłówek, np.:
 
      ```md
-     # Version: V1.1.0 – Astro Landing & VPS Platform Architecture
+     # Version: V1.1.0 – Next.js Landing & VPS Platform Architecture
      ```
 
    - Pod nim krótki akapit, który jasno stwierdza:
 
-     - `oze.zut.edu.pl` → Astro-based official landing page na hostingu ZUT.
+     - `oze.zut.edu.pl` → Next.js-based official landing page na hostingu ZUT.
      - VPS → konteneryzowana OZE-Platforma-EduBad:
        - InfluxDB, Node-RED, Grafana,
        - API Gateway (Express),
@@ -106,7 +106,7 @@ Podczas aktualizacji:
 
    Utwórz tabelę lub listę opisującą kluczowe komponenty:
 
-   - **Astro Landing Page (`oze.zut.edu.pl`)** – statyczna strona oficjalna, informacyjna, link do platformy.
+   - **Next.js Landing Page (`oze.zut.edu.pl`)** – statyczna strona oficjalna, informacyjna, link do platformy.
    - **React Frontend (Platform UI)** – interfejs użytkownika na VPS, korzystający z API Gateway i wizualizacji.
    - **API Gateway (Express/Node.js)** – spójne API, kontrola dostępu, maskowanie wewnętrznych usług.
    - **Node-RED** – integracja źródeł danych, scenariusze dydaktyczne, przetwarzanie, symulacje.
@@ -126,7 +126,7 @@ Podczas aktualizacji:
       - integruje się z Node-RED / InfluxDB / innymi usługami.
    5. **React frontend** korzysta wyłącznie z API Gateway i skonfigurowanych zasobów (np. embed Grafana).
    6. Użytkownicy:
-      - zaczynają na `oze.zut.edu.pl` (Astro landing),
+      - zaczynają na `oze.zut.edu.pl` (Next.js landing),
       - przechodzą do platformy na VPS, gdzie korzystają z interaktywnych narzędzi.
 
 6. **Zaktualizuj diagramy architektury**
@@ -134,7 +134,7 @@ Podczas aktualizacji:
    - Zastąp stare diagramy prostymi, aktualnymi schematami ASCII lub tekstowymi.
    - Pokaż:
 
-     - `oze.zut.edu.pl` (Astro) → jako oficjalna strona.
+     - `oze.zut.edu.pl` (Next.js) → jako oficjalna strona.
      - Subdomena/platforma na VPS → reverse proxy / frontend / API gateway / Node-RED / InfluxDB / Grafana.
      - Klarowny podział: „Landing (ZUT hosting)” vs „Platforma (VPS, Docker)”.
 
@@ -143,7 +143,7 @@ Podczas aktualizacji:
    Wypunktuj cechy, które są **prawdziwe dla nowej architektury**:
 
    - Separacja:
-     - oficjalna strona informacyjna (Astro, `oze.zut.edu.pl`),
+     - oficjalna strona informacyjna (Next.js, `oze.zut.edu.pl`),
      - dedykowana platforma badawczo-edukacyjna na VPS.
    - Spójne API:
      - API Gateway jako centralny punkt integracji i bezpieczeństwa.
