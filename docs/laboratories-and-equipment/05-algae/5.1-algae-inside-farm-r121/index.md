@@ -8,6 +8,12 @@ Indoor algae farm system for biofuel and biomass production research.
 
 ## Access
 
+Access to the farm via ZUT network: 
+
+[http://212.14.35.209/algaeconnectclient/#!](http://212.14.35.209/algaeconnectclient/#!)
+
+[http://212.14.35.209/algaeconnectclient/#!/login](http://212.14.35.209/algaeconnectclient/#!/login)
+
 [http://212.14.35.209/algaeconnectclient/#!/monitor](http://212.14.35.209/algaeconnectclient/#!/monitor)
 
 ## Images
@@ -34,19 +40,14 @@ Indoor algae farm system for biofuel and biomass production research.
 
 ### Current Situation
 
-The system is already connected to a small on-board PC. The PC communicates with the measurement hardware via RS-485. It runs a proprietary software interface that displays system data on a dedicated screen. Full data access currently requires login credentials (username and password unknown).
+The system is already connected to a small on-board PC. The PC communicates with the 
+measurement hardware via RS-485. It runs a proprietary software interface that displays 
+system data on a dedicated screen. Full data access currently requires login credentials: (ask for credentials from the KIOZE department staff)  <!-- (admin and 123) -->
 
-### Recommendations
+Access to the farm via ZUT network: [http://212.14.35.209/algaeconnectclient/#!/login](http://212.14.35.209/algaeconnectclient/#!/login)
 
-- Obtain software login credentials to view data parameters
-- Once logged in, data may be exportable or streamable
-- If needed, connect the PC to the LAN
+### Problems
 
-## Features
+Attempts to log in to the algae software (with ZUT VPN enabled) were unsuccessful. The login page does not show an error message and appears to timeout. Also, the disk space at the algae farm currently is out of storage, but there were no apparent reasons why. This situation would require further investigation of possible reasons. 
 
-- Algae cultivation
-- Controlled growth environment
-- Biofuel production research
-- Biomass generation
-- Monitoring and control systems
-- Educational and research applications
+

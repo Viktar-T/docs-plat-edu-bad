@@ -5,11 +5,19 @@ Solar/Wind hybrid energy generation station combining both solar and wind energy
 **Type:** Hybrid Energy System  
 **Configuration:** Solar-Wind Hybrid Station
 
+## Features
+
+- Solar/Wind hybrid energy generation
+- PC-based data acquisition system
+- Manufacturer-provided monitoring software
+- Small-scale installation
+- Educational demonstration system
+
 ## Data Acquisition System
 
 ### Current Situation
 
-A PC is already directly connected to the hybrid station system. This PC gathers and stores data using manufacturer-provided software. The system manual indicates optional LAN integration for network-based data transfer.
+A PC is already directly connected to the hybrid station system. This PC gathers and stores data using manufacturer-provided software. The system manual indicates that the software can be connected to the controller in different ways, but it has to be used everywhere. This provides a problem, as the Windows7 software is very old, and does not feature a way of automatic data handling, only a button to save to an excel sheet. The controller itself also has no network connection and would need, according to the manual, a different device from the company. Therefore, it seems this station is not modern enough to be connected to an integrated platform.
 
 ### Recommendations
 
@@ -34,10 +42,4 @@ A PC is already directly connected to the hybrid station system. This PC gathers
 
 ![Installation Photo 3](/labs/2.2.%20Solar-Wind%20Hybrid%20Station/20250624_162056.jpg)
 
-## Features
 
-- Solar/Wind hybrid energy generation
-- PC-based data acquisition system
-- Manufacturer-provided monitoring software
-- Small-scale installation
-- Educational demonstration system
